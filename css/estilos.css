@@ -1,0 +1,16 @@
+h1{text-align: center;}
+
+img{
+    display:block;
+    margin:auto;
+}
+
+h5{
+    color: rgb(8, 18, 102);
+}
+ul{
+    color: rgb(8, 18, 102);
+}
+
+body {
+    background-image: url("../img/images.jpg")}
