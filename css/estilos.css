@@ -1,4 +1,37 @@
-h1{text-align: center;}
+.container-fluid{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.nav-link{
+    color: white;  
+}
+.navbar-collapse {
+    flex-grow: initial;
+}
+#Home{background-color:#14a9d2;}
+#Block{background-color:#da8a1a;}
+#contacto{background-color:#0fd72d;}
+
+nav ul li a{
+border-bottom: 3px solid rgb(255, 255, 255);}
+
+nav ul li a:hover {
+	background: #000;
+	border-bottom: 3px solid rgb(0, 229, 255);
+}
+
+body{
+	background: white;
+	color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{text-align: center;
+	text-transform: uppercase;
+	background: rgba(31, 130, 152, 0.409);
+}
+
+
 
 img{
     display:block;
@@ -6,11 +39,14 @@ img{
 }
 
 h5{
-    color: rgb(8, 18, 102);
+    color: rgb(0, 0, 0);
 }
 ul{
-    color: rgb(8, 18, 102);
+    color: rgb(0, 0, 0);
 }
 
-body {
-    background-image: url("../img/images.jpg")}
+#footer{
+    background-color:#000;
+    color: white;
+  }
+

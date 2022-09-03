@@ -1,0 +1,21 @@
+.container-fluid{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  .nav-link{
+    color: white;  
+  }
+  .navbar-collapse {
+    flex-grow: initial;
+  }
+  #Home{background-color:#14a9d2;}
+  #Block{background-color:#da8a1a;}
+  #contacto{background-color:#0fd72d;}
+  
+  nav ul li a{
+  border-bottom: 3px solid rgb(255, 255, 255);}
+  
+  nav ul li a:hover {
+  background: #000;
+  border-bottom: 3px solid rgb(0, 229, 255);
+  }
