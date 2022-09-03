@@ -1,5 +1,5 @@
 # Trabajo-Final
 Actividad 1 - Entrega 1
 EQUIPO:
-PAOLA PEREZ
+PAOLA PEREZ,
 STEFANIA GUZMAN
