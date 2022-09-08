@@ -10,6 +10,7 @@ TEMA
 En el presente proyecto se quiere estructurar un block de tipo informativo, referente a la programacion.
 
 REQUERIMIENTOS
+
 1.-Al menos 2 páginas HTML (ej. Inicio, Toma de Horas, Nosotros, Suscripciones, Biografía, Contacto, Bibliografía, Galería de Imágenes, Videos, etc). Utilice como mínimo las siguientes etiquetas: de título (h1..h6), div, main, header, footer, img, p, form, input, option, select, button, table y video.
 
 2.-Validar el código HTML y CSS de cada una de las páginas en la W3C
