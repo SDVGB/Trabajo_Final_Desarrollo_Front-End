@@ -8,9 +8,12 @@
 .navbar-collapse {
   flex-grow: initial;
 }
-#Home{background-color:#14a9d2;}
-#Block{background-color:#da8a1a;}
-#contacto{background-color:#0fd72d;}
+#Home{background-color:#14a9d2;
+margin-right:7px;}
+#Block{background-color:#da8a1a;
+margin-right:7px;}
+#contacto{background-color:#0fd72d;
+margin-right:7px;}
 
 nav ul li a{
 border-bottom: 3px solid rgb(255, 255, 255);}
@@ -19,6 +22,7 @@ nav ul li a:hover {
 background: #000;
 border-bottom: 3px solid rgb(0, 229, 255);
 }
+
 
 h1{text-align: center;}
 
