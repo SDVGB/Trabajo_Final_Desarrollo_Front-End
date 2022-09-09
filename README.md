@@ -1,10 +1,11 @@
 # Trabajo-Final
 
+
+EQUIPO:PAOLA PEREZ,STEFANIA GUZMAN
+
 ACTIVIDADES
 
 ENTREGA 1-v0.1
-
-EQUIPO:PAOLA PEREZ,STEFANIA GUZMAN
 
 TEMA
 En el presente proyecto se quiere estructurar un block de tipo informativo, referente a la programacion.
