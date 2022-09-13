@@ -35,29 +35,32 @@ body{
 
  }
 
+ 
 h1{
   color: #340542; 
   text-align: center;
   background: linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat;
 }
 
-  p{
-    color: rgba(242, 245, 65, 0.986);
-    padding-left: 5%;
-    display: block;
-    overflow: hidden;
-    width: 1200px;
-    font-weight: 100;
-    
-    
-  }
+p{
+  color: rgba(242, 245, 65, 0.986);
+  padding-left: 5%;
+  display: block;
+  overflow: hidden;
+  width: 1200px;
+  font-weight: 100;
   
-  h2.primertitulo{
+  
+}
+
+  
+h2.primertitulo{
   padding-top: 2rem;
   padding-left: 20rem;
   color: rgb(17, 1, 46);
 
 }
+
 
 img.img1 {
   padding-top: 0rem;
@@ -70,13 +73,8 @@ h2.segundoTitulo {
   padding-left: 15%;
   font-weight: 500;
 }
-ul {
-  padding-left: 6.5%;
-  font-weight: 100;
-  color: rgba(242, 245, 65, 0.986);
-  padding-top: 1%;
-  width: 1150px;
-}
+
+
 li{
   padding-top: 2%;
 }
@@ -85,3 +83,14 @@ img.img2 {
   padding-top: 1%;
 height: 200px;
 padding-bottom: 1%;}
+
+
+
+ul.ramas {
+  padding-left: 6.5%;
+  font-weight: 100;
+  color: rgba(242, 245, 65, 0.986);
+  padding-top: 1%;
+  width: 1150px;
+
+}
