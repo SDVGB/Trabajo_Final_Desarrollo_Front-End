@@ -66,6 +66,7 @@ img.img1 {
   padding-top: 0rem;
 padding-left: 9%;
 height: 150px;
+float:right;
 }
 
 h2.segundoTitulo {
@@ -82,7 +83,10 @@ li{
 img.img2 {
   padding-top: 1%;
 height: 200px;
-padding-bottom: 1%;}
+padding-bottom: 1%;
+float:right;
+padding-right: 17%;
+}
 
 
 
@@ -92,5 +96,4 @@ ul.ramas {
   color: rgba(242, 245, 65, 0.986);
   padding-top: 1%;
   width: 1150px;
-
 }

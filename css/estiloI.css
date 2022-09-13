@@ -25,3 +25,19 @@ nav ul li a:hover{
 background: #000;
 border-bottom: 3px solid rgb(0, 229, 255);
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 5%;
+}
+
+body{
+  background-image: url("https://media.revistagq.com/photos/6273edebab8c0fea708155d0/16:9/w_2560%2Cc_limit/GettyImages-1314656208.jpg ");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+ }
