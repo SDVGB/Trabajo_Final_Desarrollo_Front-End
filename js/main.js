@@ -1,33 +1,36 @@
+import { guardarConsulta, odtenerConsulta, nuevaConsulta } from './firebase.js'
 let formu = document.getElementById('formulario')
 let contenedor = document.getElementById('listaDudas')
-let btnLimpiar = document.getElementById('btnLimpiar')
+window.addEventListener("DOMContentLoaded", async () => {
 
-formu.addEventListener('submit', CrearPelicula)
-btnLimpiar.addEventListener('click', LimpiarFormulario)
-function CrearPelicula(e) {
+	nuevaConsulta((querySnapshot) => {
+	
+		contenedor.innerHTML = "";
+		querySnapshot.forEach((doc) => {
+			const consultas = doc.data();
+	
+			contenedor.innerHTML += `
+			<div id="IDdudas">
+			 <h20>${consultas._fecha}</h20>
+			<h10>${consultas._email}</h10>
+			 <h3>${consultas._titulo}</h3>
+			 <p>${consultas._descripcion}</p>
+			 <h5><span class="badge bg-success">${consultas._genero}</span></h5>
+		 </div>`;
+		})
+	})
+});
+formu.addEventListener('submit', CrearConsulta)
+function CrearConsulta(e) {
 	//prevenir accion por defecto
 	e.preventDefault()
 
-	let infoDudas = new FormData(formu)
-	console.log(infoDudas)
-	let _fecha = infoDudas.get('fecha')
-	let _email = infoDudas.get('email')
-	let _titulo = infoDudas.get('titulo')
-	let _descripcion = infoDudas.get('descripcion')
-	let _genero = infoDudas.get('genero')
+	const _fecha = formu['fecha']
+	const _email = formu['email']
+	const _titulo = formu['titulo']
+	const _descripcion = formu['descripcion']
+	const _genero = formu['genero']
 
-	contenedor.innerHTML += `
-	 <div id="IDdudas">
-	 	<h20>${ _fecha }</h20>
-		<h10>${ _email }</h10>
-	 	<h3>${ _titulo }</h3>
-	 	<p>${ _descripcion }</p>
-	 	<h5><span class="badge bg-success">${ _genero }</span></h5>
-	 </div>`
-
+	guardarConsulta(_fecha.value, _email.value, _titulo.value, _descripcion.value, _genero.value)
 	formu.reset()
-}
-
-function LimpiarFormulario() {
-		formu.reset()
 }
