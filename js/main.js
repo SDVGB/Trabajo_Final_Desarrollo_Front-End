@@ -2,10 +2,13 @@ import { guardarConsulta, odtenerConsulta, nuevaConsulta } from './firebase.js'
 let formu = document.getElementById('formulario')
 let contenedor = document.getElementById('listaDudas')
 let btnLimpiar = document.getElementById('btnLimpiar')
+let alerta = document.getElementById('alert')
 window.addEventListener("DOMContentLoaded", async () => {
 
 	nuevaConsulta((querySnapshot) => {
-	
+
+		
+		
 		contenedor.innerHTML = "";
 		querySnapshot.forEach((doc) => {
 			const consultas = doc.data();
@@ -23,10 +26,17 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 btnLimpiar.addEventListener('click', LimpiarFormulario)
 formu.addEventListener('submit', CrearConsulta)
+
+
 function CrearConsulta(e) {
 	//prevenir accion por defecto
 	e.preventDefault()
 
+	alerta.innerHTML += `<div class="alert alert-success" role="alert" id="alert">
+	Consulta ingredasa
+	</div>`;
+	
+	
 	const _fecha = formu['fecha'] 
 	const _email = formu['email']
 	const _titulo = formu['titulo']
@@ -36,8 +46,19 @@ function CrearConsulta(e) {
 	console.log(_fecha)
 
 	guardarConsulta(_fecha.value, _email.value, _titulo.value, _descripcion.value, _genero.value)
+
+	setTimeout(function(){
+		alerta.innerHTML = "";
+	}, 1000);
+
 	formu.reset()
 }
+	
+
+
+
+
+
 
 function LimpiarFormulario() {
 	formu.reset()
