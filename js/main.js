@@ -1,6 +1,7 @@
 import { guardarConsulta, odtenerConsulta, nuevaConsulta } from './firebase.js'
 let formu = document.getElementById('formulario')
 let contenedor = document.getElementById('listaDudas')
+let btnLimpiar = document.getElementById('btnLimpiar')
 window.addEventListener("DOMContentLoaded", async () => {
 
 	nuevaConsulta((querySnapshot) => {
@@ -20,17 +21,24 @@ window.addEventListener("DOMContentLoaded", async () => {
 		})
 	})
 });
+btnLimpiar.addEventListener('click', LimpiarFormulario)
 formu.addEventListener('submit', CrearConsulta)
 function CrearConsulta(e) {
 	//prevenir accion por defecto
 	e.preventDefault()
 
-	const _fecha = formu['fecha']
+	const _fecha = formu['fecha'] 
 	const _email = formu['email']
 	const _titulo = formu['titulo']
 	const _descripcion = formu['descripcion']
 	const _genero = formu['genero']
+	_fecha.value=(new Date()).toLocaleDateString()
+	console.log(_fecha)
 
 	guardarConsulta(_fecha.value, _email.value, _titulo.value, _descripcion.value, _genero.value)
+	formu.reset()
+}
+
+function LimpiarFormulario() {
 	formu.reset()
 }

@@ -52,8 +52,8 @@
             <input type="email" placeholder="Ingrese email" class="form-control" name="email" id="email" required>
           </div>
           <div class="mb-3">
-            <label class="form-label" for="fecha">Fecha</label>
-            <input type="date" class="form-control" name="fecha" id="fecha" required>
+            <label class="form-label" for="fecha"></label>
+            <input type="hidden" class="form-control" name="fecha" id="fecha" value="" readonly  required >
           </div>
           <div class="mb-3">
             <label class="form-label" for="titulo">Título</label>
@@ -75,6 +75,12 @@
 
             </select>
           </div>
+          <div class="mb-3">
+            <input type="checkbox" id="terminos" name="Nterminos"
+                    dischecked required>
+            <label for="terminos">HE LEIDO Y ACEPTO LOS TERMINOS Y CONDICIONES</label>
+          </div>
+      
           <div class="mb-3 row">
             <div class="col-6 d-grid">
               <button type="submit" class="btn btn-primary" >Ingresar</button>
