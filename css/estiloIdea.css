@@ -55,8 +55,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(https://p4.wallpaperbetter.com/wallpaper/738/382/417/space-blue-purple-nebula-wallpaper-preview.jpg);
-  }
+    background-color: rgba(83, 36, 237, 0.396);
+}
   label{
 
     color: aliceblue;
@@ -68,10 +68,12 @@ input{
     margin-left: 6%;
 }
 .tiporama{
+    margin-top: 2%;
     margin-left: 230px;
 }
 .labels{
     margin-left: 1.5%;
+    margin-top: 2%;
   }
   button{
    margin-top: 2%;
