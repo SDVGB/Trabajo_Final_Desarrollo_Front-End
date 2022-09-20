@@ -1,30 +1,45 @@
-.container-fluid{
-  font-family:'Courier New', Courier, monospace;
+.container-fluid {
+  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
-.nav-link{
-  color: white;  
+
+.nav-link {
+  color: white;
 }
+
 .navbar-collapse {
   flex-grow: initial;
 }
-#Home{background-color:#14a9d2;
-margin-right:7px;
-}
-#Block{background-color:#da8a1a;
-margin-right:7px;}
-#contacto{background-color:#0fd72d;
-margin-right:7px;}
-#Dudas{background-color:#7f219b;
-  margin-right:7px;}
 
-nav ul li a{
-border-bottom: 3px solid rgb(255, 255, 255);}
-
-nav ul li a:hover{
-background: #000;
-border-bottom: 3px solid rgb(0, 229, 255);
+#Home {
+  background-color: #14a9d2;
+  margin-right: 7px;
 }
+
+#Block {
+  background-color: #da8a1a;
+  margin-right: 7px;
+}
+
+#contacto {
+  background-color: #0fd72d;
+  margin-right: 7px;
+}
+
+#Dudas {
+  background-color: #7f219b;
+  margin-right: 7px;
+}
+
+nav ul li a {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+  background: #000;
+  border-bottom: 3px solid rgb(0, 229, 255);
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -33,11 +48,11 @@ img {
   padding-top: 5%;
 }
 
-body{
+body {
   background-image: url("https://media.revistagq.com/photos/6273edebab8c0fea708155d0/16:9/w_2560%2Cc_limit/GettyImages-1314656208.jpg ");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 
- }
+}

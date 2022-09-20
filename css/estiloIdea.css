@@ -1,49 +1,65 @@
-.container-fluid{
-    font-family:'Courier New', Courier, monospace;
+.container-fluid {
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-.nav-link{
-    color: white;  
+
+.nav-link {
+    color: white;
 }
+
 .navbar-collapse {
     flex-grow: initial;
 }
-#Home{background-color:#14a9d2;
-margin-right:7px;
-}
-#Block{background-color:#da8a1a;
-margin-right:7px;}
-#contacto{background-color:#0fd72d;
-margin-right:7px;}
-#Dudas{background-color:#7f219b;
-    margin-right:7px;}
 
-nav ul li a{
-border-bottom: 3px solid rgb(255, 255, 255);}
-
-nav ul li a:hover{
-	background: #000;
-	border-bottom: 3px solid rgb(0, 229, 255);
+#Home {
+    background-color: #14a9d2;
+    margin-right: 7px;
 }
 
-body{
-background-image: url(https://p4.wallpaperbetter.com/wallpaper/763/122/408/deep-space-4k-wallpaper-preview.jpg);
-align-items: center;
-background-image: no-repeat;
-background-image: fixed;
-background-image: center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+#Block {
+    background-color: #da8a1a;
+    margin-right: 7px;
 }
-h1{
+
+#contacto {
+    background-color: #0fd72d;
+    margin-right: 7px;
+}
+
+#Dudas {
+    background-color: #7f219b;
+    margin-right: 7px;
+}
+
+nav ul li a {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    background: #000;
+    border-bottom: 3px solid rgb(0, 229, 255);
+}
+
+body {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/763/122/408/deep-space-4k-wallpaper-preview.jpg);
+    align-items: center;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
     margin-top: 10px;
-    color: #5862f4; 
+    color: #5862f4;
     text-align: center;
-  
+
 }
-.formularios{
+
+.formularios {
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 28px;
@@ -57,24 +73,30 @@ h1{
     align-items: center;
     background-color: rgba(83, 36, 237, 0.396);
 }
-  label{
+
+label {
 
     color: aliceblue;
-  }
-input{
+}
+
+input {
     margin-left: 10px;
 }
-.textDescrip{
+
+.textDescrip {
     margin-left: 6%;
 }
-.tiporama{
+
+.tiporama {
     margin-top: 2%;
     margin-left: 230px;
 }
-.labels{
+
+.labels {
     margin-left: 1.5%;
     margin-top: 2%;
-  }
-  button{
-   margin-top: 2%;
-  }
+}
+
+button {
+    margin-top: 2%;
+}

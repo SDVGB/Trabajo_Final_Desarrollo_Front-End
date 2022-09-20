@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/estiloDudas.css" />
   <script src="/JavaScrip/scrip.js"></script>
   <title>Block sobre la Informática</title>
@@ -48,54 +48,56 @@
       <div class="offset-md-2 col-md-8">
         <form id="formulario">
           <h1>DUDAS</h1>
+          <div id="alert">
+          </div>
           <div class="mb-3">
             <label class="form-label" for="email">email</label>
             <input type="email" placeholder="Ingrese email" class="form-control" name="Nemail" id="email" required>
           </div>
           <div class="mb-3">
-<<<<<<< HEAD
-            <label class="form-label" for="fecha">Fecha</label>
-            <input type="date" class="form-control" name="fecha" id="fecha" required>
+
+            <label class="form-label"></label>
+            <input type="hidden" class="form-control" name="Nfecha" id="fecha" value="">
           </div>
           <div class="mb-3">
             <label class="form-label" for="titulo">Título</label>
-            <input type="text" placeholder="Ingrese título" class="form-control" name="titulo" id="titulo" required>
-=======
-            <label class="form-label" for="fecha"></label>
-            <input type="hidden" class="form-control" name="Nfecha" id="fecha" value="" readonly  required >
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="titulo">Título</label>
-            <input type="" placeholder="Ingrese título" class="form-control" name="Ntitulo" id="titulo" required>
->>>>>>> 1a45167f8a6ba2ced03c9bc8c3e9991ff9d667bf
+            <input type="text" placeholder="Ingrese título" class="form-control" name="Ntitulo" id="titulo" required>
+
           </div>
           <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
-            <textarea class="form-control" name="Ndescripcion" id="descripcion" rows="5" placeholder="Ingrese descripción" required></textarea>
+            <textarea class="form-control" name="Ndescripcion" id="descripcion" rows="5"
+              placeholder="Ingrese descripción" required></textarea>
           </div>
           <div class="mb-3">
             <label class="form-label" for="genero">Tipo de Duda</label>
             <select name="Ngenero" id="genero" class="form-select" required>
-                <option value="">Seleccione</option>
-                <option value="Logica Programacion">Logica Programacion</option>
-                <option value="Javascript">Javascript</option>
-                <option value="kotlin">kotlin</option>
-                <option value="C#">C#</option>
-                <option value="SQL">SQL</option>
+              <option value="">Seleccione</option>
+              <option value="Logica Programacion">Logica Programacion</option>
+              <option value="Javascript">Javascript</option>
+              <option value="kotlin">kotlin</option>
+              <option value="C#">C#</option>
+              <option value="SQL">SQL</option>
 
             </select>
           </div>
-          <div class="mb-3 row">
-            <div class="col-6 d-grid">
-              <button type="submit" class="btn btn-primary" >Ingresar</button>
-            </div>
-            <div class="col-6 d-grid">
-              <button id="btnLimpiar" type="button" class="btn btn-danger" >Cancelar</button>
-            </div>
-            
+          <div class="mb-3">
+            <input type="checkbox" id="terminos" name="Nterminos" value=dischecked required>
+            <label for="terminos">HE LEIDO Y ACEPTO LOS TERMINOS Y CONDICIONES</label>
           </div>
 
-      
+
+          <div class="mb-3 row">
+            <div class="col-6 d-grid">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+            <div class="col-6 d-grid">
+              <button id="btnLimpiar" type="button" class="btn btn-danger">Cancelar</button>
+            </div>
+
+          </div>
+
+
 
         </form>
       </div>
@@ -110,11 +112,13 @@
 
     </div>
   </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" ></script>
-  <script src="js/main.js"></script>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script type="module" src="js/main.js"></script>
+
 </body>
 
 </html>

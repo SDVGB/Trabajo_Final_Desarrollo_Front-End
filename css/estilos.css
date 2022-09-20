@@ -1,64 +1,80 @@
-.container-fluid{
-    font-family:'Courier New', Courier, monospace;
+.container-fluid {
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-.nav-link{
-    color: white;  
+
+.nav-link {
+    color: white;
 }
+
 .navbar-collapse {
     flex-grow: initial;
 }
-#Home{background-color:#14a9d2;
-margin-right:7px;
-}
-#Block{background-color:#da8a1a;
-margin-right:7px;}
-#contacto{background-color:#0fd72d;
-margin-right:7px;}
-#Dudas{background-color:#7f219b;
-    margin-right:7px;}
 
-nav ul li a{
-border-bottom: 3px solid rgb(255, 255, 255);}
-
-nav ul li a:hover{
-	background: #000;
-	border-bottom: 3px solid rgb(0, 229, 255);
+#Home {
+    background-color: #14a9d2;
+    margin-right: 7px;
 }
 
-body{
-	background: white;
-	color: #171717;
+#Block {
+    background-color: #da8a1a;
+    margin-right: 7px;
+}
+
+#contacto {
+    background-color: #0fd72d;
+    margin-right: 7px;
+}
+
+#Dudas {
+    background-color: #7f219b;
+    margin-right: 7px;
+}
+
+nav ul li a {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    background: #000;
+    border-bottom: 3px solid rgb(0, 229, 255);
+}
+
+body {
+    background: white;
+    color: #171717;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{text-align: center;
-	text-transform: uppercase;
-	background: rgba(31, 130, 152, 0.409);
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(31, 130, 152, 0.409);
     margin-top: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 
 
-img{
-    display:block;
-    margin:auto;
+img {
+    display: block;
+    margin: auto;
 }
 
 
-h5{
+h5 {
     color: rgb(0, 0, 0);
     margin-top: 30px;
 
 }
-ul{
+
+ul {
     color: rgb(0, 0, 0);
 }
 
-#footer{
-    background-color:#000;
+#footer {
+    background-color: #000;
     color: rgb(173, 172, 172);
     padding: 60px;
     text-align: center;
-  }
+}
