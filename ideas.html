@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/estiloIdea.css" />
+  <script type="module" src="js/responForm.js"></script>
   <title>Block sobre la Informática</title>
 </head>
 
@@ -50,45 +51,38 @@
       <ul></ul>
     </div>
 
-    <form method="get">
-      <label class="labels" for="tema">Descripción:</label>
+    <form action="" method="get">
+        <label class="labels" for="descripción">Descripción:</label>
+        <input class="textDescrip" type="text" id="descripción" name="descripción" />
+        <br />
+      <label class="labels" for="tema">Tema:</label>
       <input type="text" id="tema" name="tema" />
-      <br />
-      <label class="labels" for="Descripción">Tema:</label>
-      <input class="textDescrip" type="text" id="Descripción" name="Descripción" />
-      <br />
-      <label class="labels" for="url">Url:</label>
-      <input type="text" id="url" name="url" />
-      <br />
+    <br />
       <label class="tiporama">Rama:</label>
       <br />
-      <input type="radio" id="1Rama" name="NRama1" value="A" />
+      <input type="radio" id="1Rama" name="rama" value="A" />
       <label for="1Rama">Front-End</label>
-      <input type="radio" id="2Rama" name="NRama2" value="B" />
+      <input type="radio" id="2Rama" name="rama" value="B" />
       <label for="2Rama">Desktop</label>
-      <input type="radio" id="3Rama" name="NRama3" value="C" />
+      <input type="radio" id="3Rama" name="rama" value="C" />
       <label for="3Rama">de OS</label>
-      <input type="radio" id="4Rama" name="NRama4" value="D" />
+      <input type="radio" id="4Rama" name="rama" value="D" />
       <label for="4Rama">Back-End</label>
       <br />
       <label class="tiporama">Área:</label>
       <br />
-      <input type="checkbox" value="Marketing Digital" id="marketing-digital" name="intereses" />
-      <label for="marketing-digital">Mobile</label>
+      <input type="checkbox" value=Mobile" id="Mobile" name="area" />
+      <label for="Mobile">Mobile</label>
       <br />
-      <input type="checkbox" value="Email Marketing" id="email-marketing" name="intereses" />
-      <label for="email-marketing">Web</label>
+      <input type="checkbox" value="Web" id="Web" name="area" />
+      <label for="Web">Web</label>
       <br />
-      <input type="checkbox" value="Marketing Directo" id="marketing-directo" name="intereses" />
-      <label for="marketing-directo">SQL</label>
+      <input type="checkbox" value="SQL" id="SQL" name="area" />
+      <label for="SQL">SQL</label>
       <br />
-      <button id="btn-suscribir" type="button">Suscribir</button>
+      <button id="btn-Enviar" type="button">Enviar</button>
     </form>
   </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-    crossorigin="anonymous"></script>
 
 </body>
 
