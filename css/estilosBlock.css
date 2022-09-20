@@ -25,29 +25,36 @@ nav ul li a:hover{
 background: #000;
 border-bottom: 3px solid rgb(0, 229, 255);
 }
-
-
-body{
-  background-image: url(/img/img2.jpg);
+ 
+ body::after {
+  content: "";
+  background: url(https://fondosmil.com/fondo/17028.jpg);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
   background-size: cover;
+}
 
- }
-  
 h1{
   color: #340542; 
   text-align: center;
   background: linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat;
 }
 p{
-  color: rgba(242, 245, 65, 0.986);
+  color: rgba(41, 23, 239, 0.986);
   padding-left: 5%;
-  display: block;
-  overflow: hidden;
+  display: block; 
+  font-size: 20px;
   width: 1200px;
-  font-weight: 100;
+  background: linear-gradient(105deg, rgba(233, 237, 236, 0.4) 39%, rgb(224, 236, 236) 96%) center center / 1100px 200px no-repeat;
+  font-weight: 400;
 }
   
 h2.primertitulo{
@@ -67,21 +74,24 @@ h2.segundoTitulo {
   color: rgb(17, 1, 46);
   padding-left: 15%;
   font-weight: 500;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 img.img2 {
-  padding-top: 1%;
-height: 200px;
+height:277px;
 padding-bottom: 1%;
 float:right;
-padding-right: 17%;
 }
 
 ul.ramas {
   padding-left: 6.5%;
-  font-weight: 100;
-  color: rgba(242, 245, 65, 0.986);
-  padding-top: 2%;
-  width: 1150px;
+  color: rgba(41, 23, 239, 0.986);
+  width: 1200px;
+  font-weight: 400;
+  font-size: 20px;
+  display: block;
+  background: linear-gradient(105deg, rgba(233, 237, 236, 0.4) 39%, rgb(224, 236, 236) 96%) center right / 1148px 300px no-repeat;
+
 }
 li.ramass{
   padding-top: 1.5%;
