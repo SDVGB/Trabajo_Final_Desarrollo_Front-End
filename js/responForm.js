@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         };        
         console.dir(ideasformulario);
         saveForm(ideasformulario);
-    });    
+   alert("Se ha enviado tu idea, Gracias!!") });    
 });
 function saveForm(ideasformulario) {
     const url = "https://paginaweb-27c9e-default-rtdb.firebaseio.com/ideasformulario.json";
@@ -37,7 +37,7 @@ function getArea() {
     }
 
     if( inputArea.length < 1 ) {
-        mostrarError("Debes seleccionar al menos 1 area de INTERES!!!");
+        alert("Debes seleccionar al menos 1 area de INTERES!!!");
         return false; 
     }
     return inputArea; 
@@ -45,7 +45,7 @@ function getArea() {
 function getRama() {
     let inputArr = document.querySelector("input[name='rama']:checked");
     if ( inputArr == null ) {
-        mostrarError("Debes seleccionar una rama!!!");
+        alert("Debes seleccionar una rama!!!");
         return false;
     }
     const rrama = inputArr.value;
@@ -53,5 +53,5 @@ function getRama() {
 }
 
 function mostrarError(mensajeDeError) {
-    console.error(mensajeDeError); 
+    alert.error(mensajeDeError); 
 }
