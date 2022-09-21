@@ -1,6 +1,7 @@
 
 window.addEventListener('DOMContentLoaded', (e) => {
     console.log("evento DOMContentLoaded");
+    let formularios = document.getElementById('formularios')
 
     let boton = document.getElementById("btn-Enviar");
     boton.addEventListener("click", (ev) => {
@@ -16,17 +17,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
             fecha_registro: (new Date()).toISOString() 
         };        
         console.dir(ideasformulario);
-        saveForm(ideasformulario);
-   alert("Se ha enviado tu idea, Gracias!!") });    
+        saveForm(ideasformulario); 
+    
+    });    
 });
+
 function saveForm(ideasformulario) {
     const url = "https://paginaweb-27c9e-default-rtdb.firebaseio.com/ideasformulario.json";
     fetch(url,{
         method: "POST",
         body:   JSON.stringify(ideasformulario) 
     });
-}
 
+}
 function getArea() {
     let inputArea  = document.querySelectorAll("input[name='area']:checked");
     let arrea    = []; 
@@ -53,5 +56,6 @@ function getRama() {
 }
 
 function mostrarError(mensajeDeError) {
-    alert.error(mensajeDeError); 
+    alert(mensajeDeError); 
 }
+
