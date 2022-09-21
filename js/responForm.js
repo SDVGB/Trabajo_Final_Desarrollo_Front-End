@@ -1,14 +1,17 @@
 
 window.addEventListener('DOMContentLoaded', (e) => {
     console.log("evento DOMContentLoaded");
-    let formularios = document.getElementById('formularios')
 
     let boton = document.getElementById("btn-Enviar");
     boton.addEventListener("click", (ev) => {
+        try {
         let descripcion  = document.getElementById("descripción").value;
         let tema   = document.getElementById("tema").value;
         let rama  = getRama(); 
         let area = getArea();
+        if( tema.length < 3 || descripcion.length <3) {
+            throw new Error("Llene los campos!!!");
+        }
         let ideasformulario = { 
             descripcion: descripcion, 
            tema: tema,
@@ -18,9 +21,17 @@ window.addEventListener('DOMContentLoaded', (e) => {
         };        
         console.dir(ideasformulario);
         saveForm(ideasformulario); 
+        mensajeGuardar("Se ha enviado su Idea");
+    } catch(err) { 
+        mostrarError(err.message); 
+    }
     
     });    
 });
+
+function mensajeGuardar(mensaje){
+    alert(mensaje)
+}
 
 function saveForm(ideasformulario) {
     const url = "https://paginaweb-27c9e-default-rtdb.firebaseio.com/ideasformulario.json";
@@ -56,6 +67,12 @@ function getRama() {
 }
 
 function mostrarError(mensajeDeError) {
-    alert(mensajeDeError); 
+    // valor anterior "none"    
+    document.getElementById("form-mensaje-error").style.display = "block";
+    const ul = document.querySelector("#form-mensaje-error ul");
+    const li = document.createElement("li");
+    const liText = document.createTextNode(mensajeDeError);
+    li.appendChild(liText); 
+    ul.appendChild(li); 
 }
 
